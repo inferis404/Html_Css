@@ -5,7 +5,7 @@ body{
     color:black;
     }
 
-    .title{
+.title{
         text-align: center;
         font-weight: normal;
         letter-spacing: 2px;
@@ -14,16 +14,16 @@ body{
         color: blueviolet;
     }
      
-    .justify{
+.justify{
         text-align: justify;
         font-weight: 700;
         font-style: italic;
         text-transform: capitalize;
     }
-
-    p{
-        text-indent: 10px ;
+p{
+        text-indent: 10px ;  
     }
+    
 
     ul{
         list-style-type: square;
@@ -33,9 +33,55 @@ body{
         font-style: italic;
     }
 
-    .olClass{
+.olClass{
         list-style-type:decimal-leading-zero;
         list-style-position: inside;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: rgb(0, 128, 38);
     }
+
+.table{
+        border: 1px solid black; /* Границы тип и цвет */
+        width: 100%;  /* Ширина */
+        border-collapse: collapse;/* объединение ячеек */
+        table-layout: fixed;
+            }
+.table th{
+    text-align: left; /* Положение на странице */
+    padding: 5px 10px 5px 10px; /* отступ */
+    color: blueviolet;
+    border: 1px dotted;
+}
+
+.table td{
+    border: 1px dashed black;
+    padding: 5px 10px;
+    padding-top: 10px;
+}
+
+.table tfoot td{
+    text-align: center;
+}
+
+.text-red{
+    color: red;
+    display: inline-block;/* смена типа эелемента из строчного в блочный */
+    /* inline-block гибрид, имеет свойства обоих */
+    width: 100px;
+    font-weight: 700px;
+    font-style: italic;
+}
+
+  /*.content{*/
+    /* выравнивает по центру */
+     /* width: 200px;
+     /* height: 200px;
+/* }*/
+s 
+
+
+ .page{
+     width: 900px;
+     margin-left: auto;   /* отступ*/
+     margin-right: auto;
+ }
