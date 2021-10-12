@@ -8,6 +8,15 @@ body{
   
 }
 
+.title{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-decoration: overline underline line-through dotted red;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
 .page{
     width: 800px;
     margin: 20px auto;
@@ -129,6 +138,16 @@ body{
 
 .form-group{
     margin-bottom: 15px;
+  
+}
+
+.form-fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: groove 10px blueviolet;
+    border-bottom:dotted 3px blue;
+    border-left: solid 2px brown;
+    border-right: dashed 2px red ;
 }
 
 .form-input{
@@ -145,14 +164,30 @@ body{
     height: 150px;
     padding: 5px;
     border: 3px solid brown;
-    font-family:  Arial, Helvetica, sans-serif;
+    font:bold italic 15px Arial, Helvetica, sans-serif;/* можно задать свойства для текста одной строкой*/
+    /*font-family:  Arial, Helvetica, sans-serif;*/
     font-size: 15px;
+    outline: 5px dashed red;
+    outline-offset: 5px;
 }
 
 .form-textarea:focus{
     outline: none;
     background-color:rgb(189, 162, 250);
 }
+
+.form-title{
+margin: 0 0 15px;
+}
+
+.form-input:focus{
+    outline: none;
+    background-color:rgb(189, 162, 250);
+}
+
+
+
+/*link*/
 
 .link{
     color:rgb(189, 35, 35);
@@ -166,6 +201,8 @@ body{
 .link:hover{     /*Hover псевдокласс, при наводе мыши сделано подчёркивание*/
     text-decoration:underline;
 }
+
+/*button*/
 
 .button{
     background-color:burlywood;
@@ -187,9 +224,3 @@ body{
 .button:active{
 background-color:darkblue;
 }
-
-.form-input:focus{
-    outline: none;
-    background-color:rgb(189, 162, 250);
-}
-
