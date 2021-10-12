@@ -148,3 +148,48 @@ body{
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
+
+.form-textarea:focus{
+    outline: none;
+    background-color:rgb(189, 162, 250);
+}
+
+.link{
+    color:rgb(189, 35, 35);
+    text-decoration: none;
+}
+
+.link:visited{
+    color: rgb(231, 136, 183);
+}
+
+.link:hover{     /*Hover псевдокласс, при наводе мыши сделано подчёркивание*/
+    text-decoration:underline;
+}
+
+.button{
+    background-color:burlywood;
+    border:3px solid brown;
+    padding: 5px 10px;
+}
+
+.button:focus {
+    outline:none ;
+}
+
+.button:hover,
+.button:focus {   /* при активном поле меняет параметры*/
+    background-color: rgb(99, 85, 221);
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.button:active{
+background-color:darkblue;
+}
+
+.form-input:focus{
+    outline: none;
+    background-color:rgb(189, 162, 250);
+}
+
