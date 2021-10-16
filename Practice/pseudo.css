@@ -1,0 +1,106 @@
+body{
+    margin: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    background-color: #fff;
+}
+
+/*.modal*/
+
+.modal{
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px auto;
+    position: relative;   /* позиционирование относительно другого ближайшего элемента */
+    padding:15px;
+    /*position: static;  значение по умолчанию*/
+    }
+
+.modal-title{
+    margin: 0;
+}
+
+.sqare{
+    width:50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;  /* теперь можно менять позицию, вывод из потока чтения документа */
+    top: -10px;
+    right: -10px;
+    z-index: 2;/*расстановка приоритета*/
+}
+
+
+
+.sqare.red{
+    background-color: red;
+    z-index: 1;
+}
+
+.square-fixed{
+    width:50px;
+    height: 50px;
+    background-color: rgb(81, 68, 202);
+    position: fixed;   /*fixed позволяет закрепить объект на экране при скролле*/
+    top: 50%;  /*при обозначении в % нужно добавлять отступ в margin равный половине значения   width или height*/
+    margin-top: -25px;
+    left: 0%;   
+}
+
+/*pseudo*/
+
+.pseudo-title{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pseudo-title::before{
+    content:"";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: rgb(46, 190, 42);
+    position: absolute;
+    
+    left: 50%;
+}
+
+
+.pseudo-title::after{
+    content:"";
+    display: block;
+    margin: 5px auto;
+    width: 70px;
+    height: 3px;
+    background-color: brown;
+        
+}
+
+.pseudo-text p::first-letter{ /*первая буква*/
+    color:red;
+    font-size: 20px;
+}
+
+.pseudo-text p::first-line{ /*первая строка*/
+    color:red;
+    font-size: 15px;
+}
+
+/*
+.pseudo-title::after,
+.pseudo-title::before{
+    font-size: 40px;
+    color: brown;
+}
+
+.pseudo-title::before{
+    content:'1.';  
+}
+
+.pseudo-title::after{
+    content:'  !';
+}*/
