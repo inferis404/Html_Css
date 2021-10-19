@@ -1,0 +1,30 @@
+/**,
+*::before,
+*::after{
+    box-sizing: border-box;
+} задаётся для всей страницы   */
+
+
+
+.element{
+    width: 400px;    
+    height: 400px;
+    background-color: rgb(74, 156, 211);
+    margin: 20px auto;
+    border-radius:200px 50px 70px 30% ; ;/* закругление углов, можно px, можно %  */ 
+    /*border-top-left-radius: 30%;*/
+    /*border-radius: 10px 10px 10px 10px / 5px 5px 5px 5px;  первая часть записи отвечает за верх и низ*/
+    box-shadow: 0 0 50px 10px brown, 0 0 50px 10px green; /* ось х ось у размер тени цвет*/
+    padding: 20px;
+    box-sizing: border-box;/* padding пойдёт внутрь, не увеличия размер блока */ 
+    opacity: 0.7;/*непрозрачность элемента*/
+  
+}
+
+.element-title{
+    margin-left: 70px;
+    text-shadow: 0 1px 10px  brown, 0 0 50px  green;
+    
+ 
+}
+
