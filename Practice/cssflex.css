@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+} /*задаётся для всей страницы   */
+
+/*page*/
+
+.page{
+    width: 600px;
+    margin: 20px auto;
+}
+.header{
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+    justify-content:space-around ;/* между колонками будет пространство*/ 
+    align-items: center;
+    /*flex-direction: column;/*задаёт направление*/
+}
+
+.header-item{
+    /*width: 33.3333%;*/
+    flex-basis: 0;/* отвечает за изначальную ширинку ячейки */
+    flex-grow:1 ;/*рост ячейки до одинaкового рамера*/
+}
+
+.header-logo{
+    order: 2;
+}
+
+.header-tel{
+    order: 1;
+}
+
+.header-lang{
+    order: 3;
+}
+
+.content{
+    display: flex ;
+}
+
+.sidebar{
+    width: 15%;
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+.main{
+    width: 70%;
+    background-color: chocolate;
+    padding: 20px;
+}
+
+.footer{
+    background-color:burlywood;
+    padding:20px;
+
+}
+
