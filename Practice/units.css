@@ -1,0 +1,36 @@
+html{
+    font-size: 15px;  /*  */
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.container{
+    width: 400px;
+    padding: 1rem;
+    margin: 20px auto;
+    background-color: chocolate ;
+}
+
+.title{
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: brown;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.4em 0.8em;  /* относительная единица измерения зависящая от размера шрифта родителя  */
+    background-color: burlywood;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.7em ;
+}
+
+.btn-xl{
+    font-size: 2rem;
+}
