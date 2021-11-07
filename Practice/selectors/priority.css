@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: brown;
+}
+
+/*#container{ у селектора через id приоритет
+    background-color: black;
+}*/
+
+.container{
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: burlywood;
+}
+
+.container h1{  /* приоритет селектора со вложенностью всего выше */
+    color: red;
+}
+
+.title{
+    color: green !important; /* повышает приоритет */ 
+}
