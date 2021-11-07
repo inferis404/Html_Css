@@ -1,0 +1,63 @@
+.body{...}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.text{
+    margin-bottom: 40px;
+}
+
+/*.text > p {     /* доступ к прямым потомкам 
+    color: red;
+ }  */
+
+ .text > :first-of-type {  /* поиск с изменением по типу */
+    color: red;
+ }  
+
+ .text span{
+     color: rgb(44, 168, 127);
+ }
+
+ .text span[title]{/* доступк к эелементам по атрибуту */
+    text-decoration: underline;
+ }
+
+.list{
+    margin-bottom: 40px;
+}
+
+.list li:first-child{  /* псевдокласс для первого элемента , для абзаца, last для последнего*/
+    color: blue;
+}
+
+.list li:nth-of-type(odd){ 
+    color: blue;
+}
+
+/*.list li:nth-child(odd){   псевдокласс для нечётных, even для чётных, либо можно указать номер элемента
+
+}*/
+
+
+.table{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+.label{
+    color: gray;
+}
+
+.checkbox:checked+.label{  /* Получаем доступ к следующему элементу при отметке, срабатывает только тогда, когда идёт друг за другом , часто используется в чек боксах*/
+    color: blue;
+}
+
