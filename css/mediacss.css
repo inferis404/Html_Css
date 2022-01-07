@@ -1,0 +1,78 @@
+.container{
+    max-width: 800px; /* максимальный ращзмер, адаптация для мобильных устройств */
+    padding: 1rem;
+    margin: 20px auto;
+    background-color: #eee;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    height: 100px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.red{
+    background-color: #e03333;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.title{
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: #121212;
+}
+
+/* Media */ 
+
+@media(max-width:700px){
+    .flex-item{
+        flex-basis: 50%;
+    }
+
+@media(max-width:600px){     /*будет срабатывать при соблюдении даннных условий*/
+ .container{
+     background-color: burlywood;
+ }
+
+ .flex-item{
+     flex-basis: 100%;
+ }
+
+
+.red{
+    order: 1;
+}
+
+.blue{
+    order: 2;
+}
+
+.green{
+    order: 3;
+}
+}
+
+/*@media(max-height:400px){
+    .flex-item{
+        height: 200px;
+    }
+}*/
+}
+
+@media(max-height:350px) and (orientation:landscape){
+    .flex-item{
+        height: 200px;
+    }
+}
